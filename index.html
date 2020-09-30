@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--ESTAS ETIQUETAS SE COMUNICAN CON EL NAVEGADOR-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienes Raices</title>
+    <!--AGREGAMOS UNA FUENTE PARA EL TEXTO -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <!--ENLAZAMOS EL ARCHIVO DE LA HOJA DE ESTILOS-->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<!--FIN DE ETIQUETAS-->
+
+
+<!--CONTENIDO VISIBLE-->
+<body>
+    <!--1 NOS ENFOCAMOS SOLO EN AGREGAR TEXTO-->
+    <!--2 NOS ENFOCAMOS SOLO EN AGREGAR ENLACES-->
+    <!--3 NOS ENFOCAMOS SOLO EN AGREGAR IMAGENES-->
+    <!--4 ESTRUCTURAR EL CONTENIDO-->
+    <!--5 AGREGAR CSS -->
+
+    <!--SECCION 1-->
+    <!--Encabezado-->
+    <header class="site-header inicio">
+        <!--La clase contenedor va centrar el contenido de la pagina-->
+        <!--La clase contenido-header va posicionar la barra y el h1 el titulo-->
+        <div class="contenedor contenido-header">
+            <!--Este div para posicionar la barra -->
+            <div class="barra">
+                <!--Enlace requerido para llevarnos a la pagina principal al darle clic a una imagen-->
+                <a href="/">
+                    <!--Imagen-->
+                    <img src="img/logo.svg" alt="Logotipo de Bienes Raices">
+                </a>
+
+                <nav class="navegacion">
+                    <!--Enlaces-->
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="anuncios.html">Anuncios</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contacto.html">Contacto</a>
+                </nav>
+            </div>
+            <h1>Venta de Casa y Departamentos Exclusivos de Lujo</h1>
+        </div>
+    </header>
+
+<!--####################################################################-->
+
+
+<!--SECCION 2-->
+<!--<section> Se utiliza cuando el primer hijo sea un <h1> <h2> etc
+    Si tambien hay un cambio de contanido-->
+<section class="contenedor seccion">
+    <h2 class="fw-300 centrar-texto">Mas Sobre Nosotros</h2>
+
+    <!--Clase iconos-nosotros para Posicionar los iconos-->
+    <div class="iconos-nosotros">
+        <!--<div> Cuando un contenido esta dividido-->
+        <div class="icono">
+            <!--Imagen-->
+            <img src="img/icono1.svg" alt="Icono Seguridad">
+            <h3>Seguridad</h3>
+            <p>Lorem Ipsum es simplemente el texto de relleno 
+            de las imprentas y archivos de texto. Lorem Ipsum 
+            ha sido el texto de relleno estándar de las industrias 
+            desde el año 1500, cuando un impresor 
+            (N. del T. persona que se dedica a la imprenta) 
+            desconocido usó una galería de textos y los mezcló 
+            de tal manera que logró hacer un libro de textos 
+            especimen.</p>
+        </div>
+
+        <!--<div> Cuando un contenido esta dividido-->
+        <div class="icono">
+            <!--Imagen-->
+            <img src="img/icono2.svg" alt="Icono Mejor Precio">
+            <h3>El Mejor Precio</h3>
+            <p>Lorem Ipsum es simplemente el texto de relleno 
+            de las imprentas y archivos de texto. Lorem Ipsum 
+            ha sido el texto de relleno estándar de las industrias 
+            desde el año 1500, cuando un impresor 
+            (N. del T. persona que se dedica a la imprenta) 
+            desconocido usó una galería de textos y los mezcló 
+            de tal manera que logró hacer un libro de textos 
+            especimen.</p>
+        </div>
+
+        <!--<div> Cuando un contenido esta dividido-->
+        <div class="icono">
+            <!--Imagen-->
+            <img src="img/icono3.svg" alt="Icono a Tiempo">
+            <h3>A Tiempo</h3>
+            <p>Lorem Ipsum es simplemente el texto de relleno 
+            de las imprentas y archivos de texto. Lorem Ipsum 
+            ha sido el texto de relleno estándar de las industrias 
+            desde el año 1500, cuando un impresor 
+            (N. del T. persona que se dedica a la imprenta) 
+            desconocido usó una galería de textos y los mezcló 
+            de tal manera que logró hacer un libro de textos 
+            especimen.</p>
+        </div>
+    </div>
+</section>
+
+<!--####################################################################-->
+
+
+
+    <!--SECCION 3-->
+    <!--<main> Se utiliza cuando es el contenido principal-->
+        <!--Reutilizamos las clases contenedor y la clase seccion-->
+    <main class="contenedor seccion">
+        <!--Reutilizamos la clase fw-300 y la clase centrar-texto-->
+        <h2 class="fw-300 centrar-texto">Casas y Depa en Ventas</h2>
+        
+        <!--La clase contenedor-anuncios va a posicionar los anuncion uno a la par de otro-->
+        <div class="contenedor-anuncios">
+            <!--<div> Cuando un contenido esta dividido-->
+            <div class="anuncio">
+                <!--Imagen-->
+                <img src="img/anuncio1.jpg" alt="Anuncio casa en el lago">
+                <div class="contenido-anuncio">
+                    <h3>Casa de Lujo en el Lago</h3>
+                    <p>Casa en el lago con excelente vista, acabados de lujos a un excelente precio</p>
+                    <p class="precio">Q3,000.000</p>
+                    <!--Colocar la imagenes -->
+                    <ul class="icono-caracteristicas">
+                       <li>
+                           <img src="img/icono_wc.svg" alt="Icono WC">
+                           <p>2</p>
+                       </li>
+                       <li>
+                           <img src="img/icono_estacionamiento.svg" alt="Icono Estacionamiento">
+                           <p>1</p>
+                       </li>
+                       <li>
+                           <img src="img/icono_dormitorio.svg" alt="Icono Dormitorio">
+                           <p>3</p>
+                        </li>
+                    </ul>
+                    <!--Enlaces-->
+                    <!--La clase boton para aplicarle a los botones estilos-->
+                    <!--La clase boton-amarillo para aplicarle color-->
+                    <!--La clase d-block para agrandar el boton-->
+                    <a href="#" class="boton boton-amarillo d-block">Ver Propiedad</a>
+                </div>
+            </div>
+
+            <!--<div class="anuncio"> Cuando un contenido esta dividido-->
+            <div class="anuncio">
+                <!--Imagen-->
+                <img src="img/anuncio2.jpg" alt="Anuncio casa en el lago">    
+                <div class="contenido-anuncio">
+                    <h3>Casa terminidos de Lujo</h3>
+                    <p>Casa con diseño moderno, así como tecnologia inteligente y amueblada</p>
+                    <p class="precio">Q4,000.000</p>
+                     <!--Colocar la imagenes -->
+                     <ul class="icono-caracteristicas">
+                        <li>
+                            <img src="img/icono_wc.svg" alt="Icono WC">
+                            <p>2</p>
+                        </li>
+                        <li>
+                            <img src="img/icono_estacionamiento.svg" alt="Icono Estacionamiento">
+                            <p>2</p>
+                        </li>
+                        <li>
+                            <img src="img/icono_dormitorio.svg" alt="Icono Dormitorio">
+                            <p>4</p>
+                         </li>
+                     </ul>
+                    <!--Enlaces-->
+                    <!--La clase boton para aplicarle a los botones estilos-->
+                    <!--La clase boton-amarillo para aplicarle color-->
+                    <!--La clase d-block para agrandar el boton-->
+                    <a href="#" class="boton boton-amarillo d-block">Ver Propiedad</a>
+                </div>
+            </div>
+
+            <!--<div class="anuncio"> Cuando un contenido esta dividido-->  
+            <div class="anuncio">
+                <!--Imagen-->
+                <img src="img/anuncio3.jpg" alt="Anuncio casa en el lago">  
+                <div class="contenido-anuncio">
+                    <h3>Casa con Alberca</h3>
+                    <p>Casa con alberca yh acabados de lujo en la ciudad, excelente oportunidad</p>
+                    <p class="precio">Q5,000.000</p>
+                     <!--Colocar la imagenes -->
+                     <ul class="icono-caracteristicas">
+                        <li>
+                            <img src="img/icono_wc.svg" alt="Icono WC">
+                            <p>3</p>
+                        </li>
+                        <li>
+                            <img src="img/icono_estacionamiento.svg" alt="Icono Estacionamiento">
+                            <p>2</p>
+                        </li>
+                        <li>
+                            <img src="img/icono_dormitorio.svg" alt="Icono Dormitorio">
+                            <p>5</p>
+                         </li>
+                     </ul>
+                    <!--Enlaces-->
+                    <!--La clase boton para aplicarle a los botones estilos-->
+                    <!--La clase boton-amarillo para aplicarle color-->
+                    <!--La clase d-block para agrandar el boton-->
+                    <a href="#" class="boton boton-amarillo d-block">Ver Propiedad</a>
+                </div>
+            </div>
+        </div>
+        <div class="ver-todas">
+            <a href="anuncios.html" class="boton boton-verde">Ver Todas</a>
+        </div>
+    </main>
+
+<!--####################################################################-->
+
+
+
+    <!--SECCION 4-->
+    <!--<section> Se utiliza cuando el primer hijo sea un <h1> <h2> etc
+    Si tambien hay un cambio de contanido-->
+    <!--La clase imagen-contacto para colocar una imagen-->
+    <section class="imagen-contacto">
+        <!--La clase contenedor va alinear, centrar el texto al contenedor-->
+        <!--La clase contenido-contacto para colocar el tamaño de la fuente al tamaño original-->
+        <div class="contenedor contenido-contacto">
+            <h2>Encuentra la Casa de Tus Sueños</h2>
+            <p>Llena el formulario de contacto y un acesor se pondra en contacto a la brevedad</p>
+            <a href="contacto.html" class="boton boton-amarillo">Contactanos</a>
+        </div>
+    </section>
+
+
+<!--####################################################################-->
+
+
+    <!--SECCION 5-->
+    <div class="seccion-inferior contenedor">
+        <!--<section> Se utiliza cuando el primer hijo sea un <h1> <h2> etc
+        Si tambien hay un cambio de contanido-->
+        <section class="blog">
+            <h3 class="centrar-texto f3-300">Nuestro Blog</h3>
+
+            <!--<article>Se utiliza cuando un texto habla por si solo
+                tambien se utiliza cuando se tiene una entrada de blog, un foro, un clasificado -->
+            <article class="entrada-blog">
+                <div class="imagen">
+                    <!--Imagen-->
+                    <img src="img/blog1.jpg" alt="Entrada de Blog">
+                </div>
+                <div class="texto-entrada">
+                    <!--Colocamos el h4 como tipo enlace dentro de un <a>-->
+                    <a href="#">
+                        <h4>Terraza en el techo de tu casa</h4>
+                    </a>
+                    <p>Escrito el: <span>25/01/2020</span> por: <span>Admin</span></p>
+                    <p>Consejos para construir una terraza en el techo de tu casa, con los mejores materiales.</p>
+                </div>
+            </article>
+
+            <!--<article>Se utiliza cuando un texto habla por si solo
+                tambien se utiliza cuando se tiene una entrada de blog, un foro, un clasificado -->
+            <article class="entrada-blog">
+                <div class="imagen">
+                    <!--Imagen-->
+                    <img src="img/blog2.jpg" alt="Entrada de Blog">
+                </div>
+                <div class="texto-entrada">
+                    <!--Colocamos el h4 como tipo enlace dentro de un <a>-->
+                    <a href="#">
+                        <h4>Guía para la decoración de tu hogar</h4>
+                    </a>
+                    <p>Escrito el: <span>25/01/2020</span> por: <span>Admin</span></p>
+                    <p>Maximiza el espacio en tu hogar con esta guía, aprende a combinar muebles para darle vida a tu negocio.</p>
+                </div>
+            </article>
+        </section>
+
+        <!--<section> Se utiliza cuando el primer hijo sea un <h1> <h2> etc
+        Si tambien hay un cambio de contanido-->
+        <section class="testimoniales">
+            <h3 class="centrar-texto f3-300">Testimoniales</h3>
+            <div class="testimonial">
+                <!--Etiqueta que sirve para los testimoniales-->
+                <blockquote>
+                    El personal se comportó de una excelente forma, muy buena atención y la casa que me ofrecieron cumple con todas mis expectivas
+                </blockquote>
+                <p>-Carlos Agustín</p>
+            </div>
+        </section>
+    </div>
+
+    <!--####################################################################-->
+    
+
+    <!--SECCION 6-->
+    <footer class="site-footer seccion">
+        <div class="contenedor contenedor-footer">
+            <nav class="navegacion">
+                <!--Enlaces-->
+                <a href="nosotros.html">Nosotros</a>
+                <a href="anuncios.html">Anuncios</a>
+                <a href="blog.html">Blog</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+            <p class="copyright">Todos los Derechos Reservados 2020&copy;</p>
+        </div>
+    </footer>
+</body>
+<!--FIN CONTENIDO VISIBLE-->
+</html>
