@@ -1,16 +1,20 @@
 /*HTML 1.5*/
-html{
+
+html {
     /*Establece este tamaño para utilizar rem para que el tamaños sea proporcional*/
     font-size: 62.5%;
-   
 }
 
-*, *:before, *:after{
+*,
+*:before,
+*:after {
     box-sizing: inherit;
 }
 
+
 /*BODY 1.4*/
-body{
+
+body {
     /*Cambiar la fuente*/
     font-family: 'Roboto', sans-serif;
     /*Para dejara el tamaño del contenido por default*/
@@ -20,14 +24,19 @@ body{
 }
 
 
-
 /*##### GLOBALES #####*/
 
+
 /*SECCION 1.1 CENTRAR EL CONTENIDO*/
+
+
 /*La clase contenedor va ha centrar el contenido de la pagina SECCION 1*/
-.contenedor{
+
+.contenedor {
+    width: 95%;
     /*Altura maxima */
-    max-width: 120rem;/*120rem es igual a 1200px*/
+    max-width: 120rem;
+    /*120rem es igual a 1200px*/
     /*Centrar el contenido en el contenedor*/
     /*El margen de la izquierda debe ser automatico*/
     margin-left: auto;
@@ -36,64 +45,92 @@ body{
     /**/
 }
 
+
 /*SECCION 1.8 DEFINIR UN SISTEMA DE TAMAÑOS PARA LO H1, H2, H3, H4*/
+
+
 /*Aplicar tamaño de la fuentes a todos los h1*/
-h1{
+
+h1 {
     font-size: 3.8rem;
 }
 
-h2{
+h2 {
     font-size: 3.4rem;
 }
 
-h3{
+h3 {
     font-size: 3rem;
 }
 
-h4{
+h4 {
     font-size: 2.6rem;
 }
 
 
 /*UTILIDADES*/
+
+
 /*Dejar separacion entre la SECCCION 1 y la SECCION 2*/
-.seccion{
+
+.seccion {
     /*Separacion arriba*/
     margin-top: 2rem;
     /*Separacion abajo*/
     margin-bottom: 2rem;
 }
 
+
 /*SECCION 2 cambiar fuente de Mas Sobre Nosotros*/
+
+
 /*Cambiar la fuente*/
-.fw-300{
+
+.fw-300 {
     font-weight: 300;
 }
 
+
 /*SECCION 2 centrar texto Mas Sobre Nosotros*/
+
+
 /*Centrar texto*/
-.centrar-texto{
+
+.centrar-texto {
     text-align: center;
 }
 
+
 /*SECCION 3*/
+
+
 /*Aplicar a todas la imagenes para que sean responsivas*/
+
+
 /*Si las imagenes son muy grandes hace que se ajusten al contenedor*/
-img{
+
+img {
     max-width: 100%;
 }
 
+
 /*Colocar el display-block a los enlaces para agrandar el boton ver propiedades*/
-.d-block{
+
+.d-block {
     display: block!important;
 }
 
+
 /*Centrar el contenido del anuncio de cada propiedad*/
-.contenido-centrado{
+
+.contenido-centrado {
     max-width: 800px;
 }
+
+
 /*ESTILOS DE BOTONES*/
-.boton{
+
+.boton {
     /*Color del texto ver propiedades*/
     color: white;
     /*Tamaño de la fuente ver propiedades mas gruesas*/
@@ -115,38 +152,66 @@ img{
     */
     display: inline-block;
     /*Centrar texto de boton*/
-    text-align: center;  
+    text-align: center;
     border: none;
+    /*Para que los botones tomen todo el ancho disponible cuando el sitio lo esten viendo en un celular*/
+    display: block;
+    /**/
+    flex: 0 0 100%;
 }
 
+
+/*Cuando se visualiza en un celular*/
+
+@media (min-width: 768px) {
+    .boton {
+        display: inline-block;
+        flex: 0 0 auto;
+    }
+}
+
+
 /*Para que aparazca una manita al momento de colocar el cursos encima de un boton*/
-.boton:hover{
+
+.boton:hover {
     cursor: pointer;
 }
 
+
 /*Color de fondo para el boton ver propiedades*/
-.boton-amarillo{
-    background-color:#E08709;
+
+.boton-amarillo {
+    background-color: #E08709;
 }
 
 
 /*Color de fondo para el boton ver todas*/
-.boton-verde{
+
+.boton-verde {
     background-color: #71B100;
 }
+
+
 /*##################################################################*/
 
+
 /*Para la pagina de NOSOTROS*/
+
+
 /*Encabezado*/
-.site-header{
+
+.site-header {
     background-color: #333333;
     padding: 1rem 0 3rem 0;
 }
 
 
 /*SECCION 1 HEADER*/
+
+
 /*Se utiliza dos clases para diferenciar la pagina principal*/
-.site-header.inicio{
+
+.site-header.inicio {
     /*Agregar una imagen de fondo*/
     background-image: url(../img/header.jpg);
     /*Especificamos la altura de la imagen*/
@@ -166,10 +231,12 @@ img{
 }
 
 
-
 /*SECCION 1.6 POSICIONAR EL MENÚ  O BARRA Y EL TITULO*/
+
+
 /*POSICIONAR LA BARRA Y EL TITULO*/
-.contenido-header{
+
+.contenido-header {
     /*Altura del contenedor*/
     height: 100%;
     /*Habilitamos flex*/
@@ -178,10 +245,24 @@ img{
     flex-direction: column;
     /*Alinear verticalmente la imagen arriba y el titulo abajo*/
     justify-content: space-between;
+    /*Centrar todo el texto*/
+    text-align: center;
 }
 
+
+/**/
+
+@media (min-width: 768px) {
+    .contenido-header {
+        /*Para que el contenido se valla a la izquierda*/
+        text-align: left;
+    }
+}
+
+
 /*SECCION 1.7 POSICIONAR ESTILOS AL TITULO*/
-.contenido-header h1{
+
+.contenido-header h1 {
     /*Cambiar el color al titulo */
     color: white;
     /*Separacion de texto */
@@ -192,93 +273,183 @@ img{
 
 
 /*SECCION 1.2 POSICIONAR EL MENÚ*/
+
+
 /*Posicionar La parte del menú */
-.barra{
-    /*Habilitar flex
-    Flex solo aplica al primer nivel*/
-    display: flex;
-    /*Alinear horizontalment*/
-    /*con space-beetween alinear una a la derecha y el otro a la izquierda*/
-    justify-content: space-between;
+
+.barra {
     /*Separacion en la parte de arriba*/
     /*padding-top esapcio del elemento hacia adentro*/
-    padding-top: 3rem ;
-    /*Alinear verticalmente la navegacion al centro del logo*/
-    align-items: center;
+    padding-top: 3rem;
+}
+
+
+/*Colocar el logo arriba y la nevegacion abajo cuando se visualiza en un celular*/
+
+@media (min-width: 768px) {
+    .barra {
+        /*Habilitar flex
+        Flex solo aplica al primer nivel*/
+        display: flex;
+        /*Alinear horizontalment*/
+        /*con space-beetween alinear una a la derecha y el otro a la izquierda*/
+        justify-content: space-between;
+        /*Alinear verticalmente la navegacion al centro del logo*/
+        align-items: center;
+    }
 }
 
 
 /*SECCION 1.3 ESTILOS A LOS ENLACES*/
+
+
 /*Navegacion estilos*/
-.navegacion a{
+
+.navegacion a {
     /*Color a los enlaces de navegacion*/
     color: white;
     /*Quitar la linea de abajo que trae el texto*/
     text-decoration: none;
     /*Tamaño de la letra*/
-    font-size: 1.8rem; /*1.8rem es igual a 18px*/
-    /*Separacion con los elemento de navegacion*/
-    margin-right: 2rem;
+    font-size: 2.2rem;
+    /*Cada enlace se posicione uno abajo del otro cuando se vea en un celular*/
+    display: block;
 }
 
+
+/**/
+
+@media (min-width: 768px) {
+    .navegacion a {
+        display: inline-block;
+        /*1.8rem es igual a 18px*/
+        font-size: 1.8rem;
+        /*Separacion con los elemento de navegacion*/
+        margin-right: 2rem;
+    }
+    /*para quitar el margen al ultimo elemento de navegacion (contacto)*/
+    /*Seudoselectores last-of-type*/
+    .navegacion a:last-of-type {
+        margin: 0;
+    }
+}
+
+
 /*para quitar el margen al ultimo elemento de navegacion (contacto)*/
+
+
 /*Seudoselectores last-of-type*/
-.navegacion a:last-of-type{
+
+.navegacion a:last-of-type {
     margin: 0;
 }
 
+
 /*Cambiar el color del texto de navegacion al momento de colocar el cursos encima*/
-.navegacion a:hover{
+
+.navegacion a:hover {
     color: #71b100;
 }
+
+
+/*MENU TIPO HAMBURGUESA*/
+
+.mobile-menu img {
+    /*Ancho de la imagen de las tres rayitas*/
+    width: 5rem;
+}
+
+@media (min-width: 768px) {
+    .mobile-menu {
+        /*No se va a mostrar la imagen de la hamburguesa*/
+        display: none;
+    }
+}
+
+
+/*pOR DEFAULT LA IMAGEN DE HAMBURGUESA VA ESTA OCULTA*/
+
+.navegacion {
+    display: none;
+}
+
+
+/**/
+
+.navegacion:target {
+    display: block;
+}
+
+@media (min-width: 768) {
+    .navegacion {
+        display: none;
+    }
+}
+
+
 /*##################################################################*/
 
 
 /*SECCION 2*/
+
+
 /*Mas sobre nosotros*/
-/*Posicionar lo iconos y su texto*/
-.iconos-nosotros{
-    /*Habilitamos flex*/
-    display: flex;
-    /*Separacion*/
-    justify-content: space-between;
+
+@media (min-width: 768px) {
+    /*Posicionar lo iconos y su texto*/
+    .iconos-nosotros {
+        /*Habilitamos flex*/
+        display: flex;
+        /*Separacion*/
+        justify-content: space-between;
+    }
 }
 
 
 /*Para definir una ancho a cada hijo (a cada icono) */
-.icono{
-    /*Especificamos la base de cuanto va ser el ancho*/
-    /*La funcion calc() realiza una operacion matematica*/
-    flex-basis: calc(33.3% - 1rem);
+
+.icono {
     /*Centrar el contenido*/
     text-align: center;
 }
 
+
 /**/
-.icono h3{
+
+@media (min-width: 768px) {
+    .icono {
+        /*Especificamos la base de cuanto va ser el ancho*/
+        /*La funcion calc() realiza una operacion matematica*/
+        flex-basis: calc(33.3% - 1rem);
+    }
+}
+
+
+/**/
+
+.icono h3 {
     /*Tranformar los textos a mayuscula*/
     text-transform: uppercase;
 }
 
+
 /*##################################################################*/
 
+
 /*SECCION 3*/
-.contenedor-anuncios{
-    display: flex;
-    /*Separcion de contenido*/
-    justify-content: space-between;
-    /*Para posicionar los demas anuncios agregados en la parte de abajo
-    de los demas anuncios*/
-    flex-wrap: wrap;
+
+@media (min-width: 768px) {
+    .contenedor-anuncios {
+        display: flex;
+        /*Separcion de contenido*/
+        justify-content: space-between;
+        /*Para posicionar los demas anuncios agregados en la parte de abajo
+        de los demas anuncios*/
+        flex-wrap: wrap;
+    }
 }
 
-.anuncio{
-    /*Cuando se agrega mas anuncios cada vez que se va agregando 
-    anuncios la imagen se va reduciendo esta prpoiedad flex-shrink 
-    deja el tamaño por default*/
-    flex-shrink: 0;
-    /*Calc Calcula el tamñano de cada anuncio*/
-    flex-basis: calc(33.3% - 1rem);
+.anuncio {
     /*Borde colocar un border a los anuncios*/
     border-style: solid;
     border-color: #B5B5B5;
@@ -288,44 +459,60 @@ img{
     margin-bottom: 2rem;
 }
 
-.contenido-anuncio{
+
+/**/
+
+@media (min-width: 768px) {
+    .anuncio {
+        /*Cuando se agrega mas anuncios cada vez que se va agregando 
+        anuncios la imagen se va reduciendo esta prpoiedad flex-shrink 
+        deja el tamaño por default*/
+        flex-shrink: 0;
+        /*Calc Calcula el tamñano de cada anuncio*/
+        flex-basis: calc(33.3% - 1rem);
+    }
+}
+
+.contenido-anuncio {
     /*Espacio hacia adentro del cuadro del anuncio en todas las direcciones*/
     padding: 2rem;
 }
 
-.contenido-anuncio h3, .contenido-anuncio p{
+.contenido-anuncio h3,
+.contenido-anuncio p {
     /*Quitar la separacion de la imagen y el titulo (casa de lujo en el lago)
     asi tambien para ajustar el contenido del parrafo*/
     margin: 0;
 }
 
+
 /*Para aplicar color tamaño de la fuente*/
-.precio{
+
+.precio {
     color: green;
     font-weight: 700;
 }
 
-.ver-todas{
+.ver-todas {
     display: flex;
     /*Alinaer el boton ver todas a la derecha*/
     justify-content: flex-end;
 }
 
-.icono-caracteristicas{
+.icono-caracteristicas {
     /*Eliminar viñetas*/
     list-style: none;
     /*Quitar el padding de cada icono*/
     padding: 0;
     /**/
     display: flex;
-
     flex: 1;
     /*Para la parte de anuncio se tiene que acotar
     los iconos*/
     max-width: 500px;
 }
 
-.icono-caracteristicas li{
+.icono-caracteristicas li {
     /*Posicionar los iconos*/
     flex: 1;
     /*Para que los numeros se coloquen frente al icono*/
@@ -337,8 +524,10 @@ img{
 
 /*##################################################################*/
 
+
 /*SECCION 4*/
-.imagen-contacto{
+
+.imagen-contacto {
     /*Imagen de fondo*/
     background-image: url(../img/encuentra.jpg);
     /*Poscionar la imagen*/
@@ -353,14 +542,14 @@ img{
     align-items: center;
 }
 
-.contenido-contacto{
+.contenido-contacto {
     /*Para colocar el tamaño a la fuente al tamaño original*/
-    flex: 1;
+    flex: 0 0 95%;
     /*color del contenido*/
     color: white;
 }
 
-.contenido-contacto p{
+.contenido-contacto p {
     /*Tamaño del contenido del parrafo*/
     font-size: 1.8rem;
 }
@@ -368,69 +557,82 @@ img{
 
 /*##################################################################*/
 
+
 /*SECCION 5*/
-.seccion-inferior{
-    /*Habilitamos Flex */
-    /*El contenido del blog y los testimoniales se colocan uno a la par del otro*/
-    display: flex;
-    justify-content: space-between;
+
+@media (min-width: 768px) {
+    .seccion-inferior {
+        /*Habilitamos Flex */
+        /*El contenido del blog y los testimoniales se colocan uno a la par del otro*/
+        display: flex;
+        justify-content: space-between;
+    }
+    .seccion-inferior .blog {
+        /*Separacion*/
+        flex-basis: 60%;
+    }
+    .seccion-inferior .testimoniales {
+        flex-basis: calc(40% - 2rem);
+    }
 }
 
-.seccion-inferior .blog{
-    /*Separacion*/
-    flex-basis: 60%;
-}
-
-.seccion-inferior .testimoniales{
-    flex-basis: calc(40% - 2rem);
-}
-
-.entrada-blog{
-    display: flex;
-    justify-content: space-between;
+.entrada-blog {
     /*Separacion o espacio de las imagenes hacia abajo*/
     margin-bottom: 2rem;
 }
 
-.entrada-blog:last-of-type{
+@media (min-width: 768px) {
+    .entrada-blog {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.entrada-blog:last-of-type {
     /*Eliminar la franja naranja del ultimo elemento*/
     margin: 0;
 }
 
-.entrada-blog .imagen{
-    /*Ancho de la imagen*/
-    flex-basis: 40%;
+@media (min-width: 768px) {
+    .entrada-blog .imagen {
+        /*Ancho de la imagen*/
+        flex-basis: 40%;
+    }
+    .entrada-blog .texto-entrada {
+        /*Ancho al texto*/
+        flex-basis: calc(60% - 3rem);
+    }
 }
 
-.entrada-blog .texto-entrada{
-    /*Ancho al texto*/
-    flex-basis: calc(60% - 3rem);
-}
-
-.texto-entrada h4{
+.texto-entrada h4 {
     /*Quitar el margen de h4*/
     margin: 0;
     /*Interlineado del texto y la imagen*/
     line-height: 1.4;
 }
 
+
 /*Cambiar estilos a los enlaces <a>*/
-.texto-entrada a{
+
+.texto-entrada a {
     /*Color*/
     color: black;
     /*Quitar la linea de abajo del texto*/
     text-decoration: none;
 }
 
-.texto-entrada h4{
+.texto-entrada h4 {
     /*Quitamos el marge*/
     margin: 0;
     /*Interlineado*/
-    line-height: 1.4;;
+    line-height: 1.4;
+    ;
 }
 
+
 /*Seudoelementos after*/
-.texto-entrada h4::after{
+
+.texto-entrada h4::after {
     content: '';
     display: block;
     width: 15rem;
@@ -439,13 +641,15 @@ img{
     margin-top: 1rem;
 }
 
-.texto-entrada span{
+.texto-entrada span {
     /*Cambiar color donde dice admin*/
     color: #E08709;
 }
 
+
 /*testimaniales*/
-.testimonial{
+
+.testimonial {
     background-color: #71B100;
     /*Tamaño de l texto*/
     font-size: 2.4rem;
@@ -455,14 +659,15 @@ img{
     color: white;
     /*Colocar las esquina redondeadas*/
     border-radius: 2rem;
+    margin-bottom: 2rem;
 }
 
-.testimonial p{
+.testimonial p {
     /*Texto del nombre del testimonial*/
     text-align: right;
 }
 
-.testimonial blockquote::before{
+.testimonial blockquote::before {
     content: '';
     background-image: url(../img/comilla.svg);
     width: 4rem;
@@ -471,7 +676,7 @@ img{
     left: -2rem;
 }
 
-.testimonial blockquote{
+.testimonial blockquote {
     position: relative;
     padding-left: 5rem;
 }
@@ -479,89 +684,110 @@ img{
 
 /*##################################################################*/
 
+
 /*SECCION 6*/
 
-.site-footer{
+.site-footer {
     background-color: #333333;
     margin: 0;
 }
 
-.contenedor-footer{
+.contenedor-footer {
     padding: 3rem 0;
-    display: flex;
-    justify-content: space-between;
+    text-align: center;
 }
 
-.copyright{
+@media (min-width: 768px) {
+    .contenedor-footer {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.copyright {
     margin: 0;
     color: white;
 }
 
 
-
 /*##################################################################*/
 
+
 /*INTERNAS*/
-.contenido-nosotros{
-    /*Nuevo estandar con grip */
-    display: grid;
-    /*Ordena en 2 columnas y especificamos que la columna
-    de la imagen va tener una tamaño de 50 y la otra columna
-    para el texto va tener una tamaño de 50*/
-    grid-template-columns: 50% 50%;
-    /*Separacion de la imagen y el texto */
-    grid-column-gap: 2rem;
+
+@media (min-width: 768px) {
+    .contenido-nosotros {
+        /*Nuevo estandar con grip */
+        display: grid;
+        /*Ordena en 2 columnas y especificamos que la columna
+        de la imagen va tener una tamaño de 50 y la otra columna
+        para el texto va tener una tamaño de 50*/
+        grid-template-columns: 50% 50%;
+        /*Separacion de la imagen y el texto */
+        grid-column-gap: 2rem;
+    }
 }
 
-.texto-nosotros blockquote{
+.texto-nosotros blockquote {
     font-weight: 900;
-    font-size:  2rem;
+    font-size: 2rem;
     margin: 0;
     padding: 0 0 3rem 0;
 }
 
 
 /*ANUNCIO DE CADA PROPIEDAD*/
-.resumen-propiedad{
+
+.resumen-propiedad {
     display: flex;
     justify-content: space-between;
 }
 
 
-
 /*APLICAR ESTILOS A LOS PARRAFOS*/
-.contacto p{
+
+.contacto p {
     font-size: 1.2rem;
     color: #4f4f4f;
     margin: 2rem 0 0 0;
 }
 
+
 /*ESTILOS A LEGEND*/
-legend{
-    font-size: 2.2rem;
+
+legend {
+    font-size: 2.0rem;
     color: #333333;
 }
 
+
 /*FORMULARIO DE CONCTACTO*/
-label{
+
+label {
     /*Para que todos los input tomen todo el esapcio disponible */
     display: block;
     font-weight: 700;
     text-transform: uppercase;
 }
 
+
 /*ESTILOS A LOS INPUTS*/
+
+
 /*type="text" unicamente selecciona en input de tipo text para aplicarle estilos*/
+
 
 /*Para aplicarle estilos a todos los inputs, 
 con input:not([type="submit"]) excluye al boton aunque sea un input para no aplicarle los estilos*/
-input:not([type="submit"]), textarea{
+
+input:not([type="submit"]),
+textarea {
     /*Espacio hacia adentro del cuadro del anuncio en todas las direcciones*/
     padding: 1rem;
     /*Tome todo el espacio disponible*/
     display: block;
     /*Que mida el 100%*/
-    width: 97%;
+    width: 95%;
     /*Color del input*/
     background-color: #e1e1e1;
     /*Separacion entre inputs*/
@@ -572,28 +798,33 @@ input:not([type="submit"]), textarea{
     border-radius: 1rem;
 }
 
+
 /*Para especificar el ancho del radio*/
-input[type="radio"]{
+
+input[type="radio"] {
     /*Se acomodo al ancho del radio */
     width: auto;
 }
 
 
 /*Para aplicarle estilos al combo box*/
-select{
+
+select {
     /*Prefijos*/
     -webkit-appearance: none;
     appearance: none;
 }
 
-textarea{
+textarea {
     height: 20rem;
 }
 
+
 /*FORMA CONTACTO*/
-.forma-contacto{
+
+.forma-contacto {
     max-width: 30rem;
-    display:flex;
+    display: flex;
     justify-content: space-between;
     /*Alinear Verticalmente*/
     align-items: center;

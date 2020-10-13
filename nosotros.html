@@ -2,6 +2,7 @@
 <html lang="en">
 
 <!--ESTAS ETIQUETAS SE COMUNICAN CON EL NAVEGADOR-->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,6 +17,7 @@
 
 
 <!--CONTENIDO VISIBLE-->
+
 <body>
     <!--1 NOS ENFOCAMOS SOLO EN AGREGAR TEXTO-->
     <!--2 NOS ENFOCAMOS SOLO EN AGREGAR ENLACES-->
@@ -37,7 +39,15 @@
                     <img src="img/logo.svg" alt="Logotipo de Bienes Raices">
                 </a>
 
-                <nav class="navegacion">
+                <!--MENÚ DE HAMBURGUESA-->
+                <div class="mobile-menu">
+                    <!--#navegacion asi es como se enlaza hacia un id-->
+                    <a href="#navegacion">
+                        <img src="img/barras.svg" alt="Icono Menú">
+                    </a>
+                </div>
+
+                <nav id="navegacion" class="navegacion">
                     <!--Enlaces-->
                     <a href="nosotros.html">Nosotros</a>
                     <a href="anuncios.html">Anuncios</a>
@@ -48,38 +58,33 @@
         </div>
     </header>
 
-<!--####################################################################-->
-<main class="contenedor">
-    <h1 class="centrar-texto fw-300">Conoce Sobre Nosotros</h1>
+    <!--####################################################################-->
+    <main class="contenedor">
+        <h1 class="centrar-texto fw-300">Conoce Sobre Nosotros</h1>
 
-    <div class="contenido-nosotros">
-        <img src="img/nosotros.jpg" alt="Imagen Sobre Nosotros">
-    
+        <div class="contenido-nosotros">
+            <img src="img/nosotros.jpg" alt="Imagen Sobre Nosotros">
 
-        <div class="texto-nosotros">
-            <blockquote>25 Años de Experiencia</blockquote>
 
-            <p>Lorem Ipsum es simplemente el texto de relleno 
-                de las imprentas y archivos de texto. Lorem Ipsum 
-                ha sido el texto de relleno estándar de las industrias 
-                desde el año 1500, cuando un impresor 
-                (N. del T. persona que se dedica a la imprenta) 
-                desconocido usó una galería de textos y los mezcló 
-                de tal manera que logró hacer un libro de textos 
-                especimen.</p>
+            <div class="texto-nosotros">
+                <blockquote>25 Años de Experiencia</blockquote>
+
+                <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta)
+                    desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.
+                </p>
+            </div>
         </div>
-    </div>
-</main>
+    </main>
 
 
-<!--####################################################################-->
-    
-<!--SECCION 2-->
-<!--<section> Se utiliza cuando el primer hijo sea un <h1> <h2> etc
+    <!--####################################################################-->
+
+    <!--SECCION 2-->
+    <!--<section> Se utiliza cuando el primer hijo sea un <h1> <h2> etc
     Si tambien hay un cambio de contanido-->
     <section class="contenedor seccion">
         <h2 class="fw-300 centrar-texto">Mas Sobre Nosotros</h2>
-    
+
         <!--Clase iconos-nosotros para Posicionar los iconos-->
         <div class="iconos-nosotros">
             <!--<div> Cuando un contenido esta dividido-->
@@ -87,50 +92,35 @@
                 <!--Imagen-->
                 <img src="img/icono1.svg" alt="Icono Seguridad">
                 <h3>Seguridad</h3>
-                <p>Lorem Ipsum es simplemente el texto de relleno 
-                de las imprentas y archivos de texto. Lorem Ipsum 
-                ha sido el texto de relleno estándar de las industrias 
-                desde el año 1500, cuando un impresor 
-                (N. del T. persona que se dedica a la imprenta) 
-                desconocido usó una galería de textos y los mezcló 
-                de tal manera que logró hacer un libro de textos 
-                especimen.</p>
+                <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta)
+                    desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.
+                </p>
             </div>
-    
+
             <!--<div> Cuando un contenido esta dividido-->
             <div class="icono">
                 <!--Imagen-->
                 <img src="img/icono2.svg" alt="Icono Mejor Precio">
                 <h3>El Mejor Precio</h3>
-                <p>Lorem Ipsum es simplemente el texto de relleno 
-                de las imprentas y archivos de texto. Lorem Ipsum 
-                ha sido el texto de relleno estándar de las industrias 
-                desde el año 1500, cuando un impresor 
-                (N. del T. persona que se dedica a la imprenta) 
-                desconocido usó una galería de textos y los mezcló 
-                de tal manera que logró hacer un libro de textos 
-                especimen.</p>
+                <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta)
+                    desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.
+                </p>
             </div>
-    
+
             <!--<div> Cuando un contenido esta dividido-->
             <div class="icono">
                 <!--Imagen-->
                 <img src="img/icono3.svg" alt="Icono a Tiempo">
                 <h3>A Tiempo</h3>
-                <p>Lorem Ipsum es simplemente el texto de relleno 
-                de las imprentas y archivos de texto. Lorem Ipsum 
-                ha sido el texto de relleno estándar de las industrias 
-                desde el año 1500, cuando un impresor 
-                (N. del T. persona que se dedica a la imprenta) 
-                desconocido usó una galería de textos y los mezcló 
-                de tal manera que logró hacer un libro de textos 
-                especimen.</p>
+                <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta)
+                    desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.
+                </p>
             </div>
         </div>
     </section>
 
-<!--####################################################################-->
-    
+    <!--####################################################################-->
+
 
     <!--SECCION 6-->
     <footer class="site-footer seccion">
@@ -147,4 +137,5 @@
     </footer>
 </body>
 <!--FIN CONTENIDO VISIBLE-->
+
 </html>

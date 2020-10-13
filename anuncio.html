@@ -2,6 +2,7 @@
 <html lang="en">
 
 <!--ESTAS ETIQUETAS SE COMUNICAN CON EL NAVEGADOR-->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,6 +17,7 @@
 
 
 <!--CONTENIDO VISIBLE-->
+
 <body>
     <!--1 NOS ENFOCAMOS SOLO EN AGREGAR TEXTO-->
     <!--2 NOS ENFOCAMOS SOLO EN AGREGAR ENLACES-->
@@ -37,7 +39,15 @@
                     <img src="img/logo.svg" alt="Logotipo de Bienes Raices">
                 </a>
 
-                <nav class="navegacion">
+                <!--MENÚ DE HAMBURGUESA-->
+                <div class="mobile-menu">
+                    <!--#navegacion asi es como se enlaza hacia un id-->
+                    <a href="#navegacion">
+                        <img src="img/barras.svg" alt="Icono Menú">
+                    </a>
+                </div>
+
+                <nav id="navegacion" class="navegacion">
                     <!--Enlaces-->
                     <a href="nosotros.html">Nosotros</a>
                     <a href="anuncios.html">Anuncios</a>
@@ -48,51 +58,40 @@
         </div>
     </header>
 
-<!--####################################################################-->
-<h1 class="centrar-texto fw-300">Casa en Venta frente al Bosque</h1>
-<img src="img/destacada.jpg" alt="">
+    <!--####################################################################-->
+    <h1 class="centrar-texto fw-300">Casa en Venta frente al Bosque</h1>
+    <img src="img/destacada.jpg" alt="">
 
-<!--####################################################################-->
+    <!--####################################################################-->
 
-<main class="contenedor seccion contenido-centrado">
-    <div class="resumen-propiedad">
-        <p class="precio">Q3,000.000</p>
-        <!--Colocar la imagenes -->
-        <ul class="icono-caracteristicas">
-            <li>
-                <img src="img/icono_wc.svg" alt="Icono WC">
-                <p>3</p>
-            </li>
-            <li>
-                <img src="img/icono_estacionamiento.svg" alt="Icono Estacionamiento">
-                <p>2</p>
-            </li>
-            <li>
-                <img src="img/icono_dormitorio.svg" alt="Icono Dormitorio">
-                <p>5</p>
-             </li>
-         </ul>
-    </div>
+    <main class="contenedor seccion contenido-centrado">
+        <div class="resumen-propiedad">
+            <p class="precio">Q3,000.000</p>
+            <!--Colocar la imagenes -->
+            <ul class="icono-caracteristicas">
+                <li>
+                    <img src="img/icono_wc.svg" alt="Icono WC">
+                    <p>3</p>
+                </li>
+                <li>
+                    <img src="img/icono_estacionamiento.svg" alt="Icono Estacionamiento">
+                    <p>2</p>
+                </li>
+                <li>
+                    <img src="img/icono_dormitorio.svg" alt="Icono Dormitorio">
+                    <p>5</p>
+                </li>
+            </ul>
+        </div>
 
-    <p>Lorem Ipsum es simplemente el texto de relleno 
-        de las imprentas y archivos de texto. Lorem Ipsum 
-        ha sido el texto de relleno estándar de las industrias 
-        desde el año 1500, cuando un impresor 
-        (N. del T. persona que se dedica a la imprenta) 
-        desconocido usó una galería de textos y los mezcló 
-        de tal manera que logró hacer un libro de textos 
-        especimen. Lorem Ipsum es simplemente el texto de relleno 
-        de las imprentas y archivos de texto. Lorem Ipsum 
-        ha sido el texto de relleno estándar de las industrias 
-        desde el año 1500, cuando un impresor 
-        (N. del T. persona que se dedica a la imprenta) 
-        desconocido usó una galería de textos y los mezcló 
-        de tal manera que logró hacer un libro de textos 
-        especimen.</p>
-</main>
+        <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido
+            usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las
+            industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.
+        </p>
+    </main>
 
-<!--####################################################################-->
-    
+    <!--####################################################################-->
+
 
     <!--SECCION 6-->
     <footer class="site-footer seccion">
@@ -109,4 +108,5 @@
     </footer>
 </body>
 <!--FIN CONTENIDO VISIBLE-->
+
 </html>

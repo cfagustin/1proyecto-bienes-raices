@@ -2,6 +2,7 @@
 <html lang="en">
 
 <!--ESTAS ETIQUETAS SE COMUNICAN CON EL NAVEGADOR-->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,6 +17,7 @@
 
 
 <!--CONTENIDO VISIBLE-->
+
 <body>
     <!--1 NOS ENFOCAMOS SOLO EN AGREGAR TEXTO-->
     <!--2 NOS ENFOCAMOS SOLO EN AGREGAR ENLACES-->
@@ -37,7 +39,15 @@
                     <img src="img/logo.svg" alt="Logotipo de Bienes Raices">
                 </a>
 
-                <nav class="navegacion">
+                <!--MENÚ DE HAMBURGUESA-->
+                <div class="mobile-menu">
+                    <!--#navegacion asi es como se enlaza hacia un id-->
+                    <a href="#navegacion">
+                        <img src="img/barras.svg" alt="Icono Menú">
+                    </a>
+                </div>
+
+                <nav id="navegacion" class="navegacion">
                     <!--Enlaces-->
                     <a href="nosotros.html">Nosotros</a>
                     <a href="anuncios.html">Anuncios</a>
@@ -48,7 +58,7 @@
         </div>
     </header>
 
-<!--####################################################################-->
+    <!--####################################################################-->
 
 
     <!--SECCION 5-->
@@ -63,14 +73,14 @@
             </div>
             <div class="texto-entrada">
                 <!--Colocamos el h4 como tipo enlace dentro de un <a>-->
-                 <a href="entrada.html">
+                <a href="entrada.html">
                     <h4>Terraza en el techo de tu casa</h4>
                 </a>
                 <p>Escrito el: <span>25/01/2020</span> por: <span>Admin</span></p>
                 <p>Consejos para construir una terraza en el techo de tu casa, con los mejores materiales.</p>
             </div>
         </article>
-    
+
         <!--<article>Se utiliza cuando un texto habla por si solo
         tambien se utiliza cuando se tiene una entrada de blog, un foro, un clasificado -->
         <article class="entrada-blog">
@@ -97,7 +107,7 @@
             </div>
             <div class="texto-entrada">
                 <!--Colocamos el h4 como tipo enlace dentro de un <a>-->
-                 <a href="entrada.html">
+                <a href="entrada.html">
                     <h4>Terraza en el techo de tu casa</h4>
                 </a>
                 <p>Escrito el: <span>25/01/2020</span> por: <span>Admin</span></p>
@@ -121,10 +131,10 @@
                 <p>Maximiza el espacio en tu hogar con esta guía, aprende a combinar muebles para darle vida a tu negocio.</p>
             </div>
         </article>
-</main>
+    </main>
 
-<!--####################################################################-->
-    
+    <!--####################################################################-->
+
 
     <!--SECCION 6-->
     <footer class="site-footer seccion">
@@ -141,4 +151,5 @@
     </footer>
 </body>
 <!--FIN CONTENIDO VISIBLE-->
+
 </html>
